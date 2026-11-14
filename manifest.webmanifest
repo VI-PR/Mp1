@@ -1,0 +1,31 @@
+{
+ "name": "Marcelin Power",
+ "short_name": "Mad Dawg",
+ "lang": "fr",
+ "dir": "ltr",
+ "description": "Bloc 1 v5 : séances, charges suggérées, analyse série par série, minuteur, progrès.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0D1B30",
+ "theme_color": "#0D1B30",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
