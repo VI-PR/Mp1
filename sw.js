@@ -1,6 +1,6 @@
 /* Marcelin Power : service worker (mode hors ligne). Les données ne passent jamais par ici : elles restent dans le téléphone.
    Une nouvelle version = un nouveau cache ; l'ancienne reste active jusqu'à ce que tu touches « Mettre à jour ». */
-var VERSION = '9ee02a0a';
+var VERSION = 'e44550e1';
 var CACHE = 'mp-' + VERSION;
 var FILES = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 

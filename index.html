@@ -539,9 +539,11 @@ window.MP_POSES = {"Vélo stationnaire ou elliptique":"data:image/png;base64,iVB
       ['j1-squat-top', 'Comp squat (low bar) - top set', [1, 1, 1, 1, 1], '5', 'top', 'sq', { adapt: true, e1: true, warm: 'squat', tip: 'Profondeur de compétition : pli de la hanche sous le haut du genou.' }],
       ['j1-squat-bo', 'Comp squat (low bar) - back-off', [3, 3, 3, 3, 2], '6', 'bo', 'sq', { adapt: true }],
       ['j1-trap-light', 'Trap bar deadlift léger (poignées hautes)', [2, 2, 2, 2, 1], '8', 'light', 'dl', { tip: 'Poignées hautes, barre rapide.' }],
+      // 15 nov 2026 (choix de christopher) : mollets juste après les gros mouvements du jour ; adducteurs ajoutés dès T1 S2 (nouvel id)
+      ['j1-calf', 'Mollets debout (machine / Smith)', [3, 3, 4, 4, 2], '8-12', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }],
       ['j1-pendulum', 'Pendulum squat', [2, 3, 3, 3, 2], '12', 'acc', 'ac', { t1s1: ['Hack squat', '12'], star: true, tip: 'Descente de 2-3 s, amplitude complète. Note le total des plaques.' }],
       ['j1-legcurl', 'Leg curl couché', [2, 3, 3, 3, 2], '12-15', 'acc', 'ac', { t1s1: ['Leg curl (seated)', '12-15'], tip: 'Hanches collées au banc, descente de 2-3 s.' }],
-      ['j1-calf', 'Mollets debout (machine / Smith)', [3, 3, 4, 4, 2], '8-12', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }]
+      ['j1-adductor', 'Adductor machine (Atlantis)', [0, 3, 3, 3, 2], '12-15', 'acc', 'ac', { t1s1: ['Adductor machine (Atlantis)', '12-15'], star: true, tip: 'Amplitude complète, 2 s en étirement (jambes ouvertes), sans rebond.' }]
     ] },
     { id: 'j2', short: 'J2', dayName: 'Mardi', title: 'Bench + haut du corps', sheet: 'JOUR 2 (mardi) - Bench + haut du corps', ex: [
       ['j2-bench-top', 'Comp bench press - top set', [1, 1, 1, 1, 1], '6', 'top', 'bp', { adapt: true, e1: true, warm: 'bench', tip: 'Pause de compétition : barre immobile sur la poitrine.' }],
@@ -560,15 +562,16 @@ window.MP_POSES = {"Vélo stationnaire ou elliptique":"data:image/png;base64,iVB
       ['j3-trap-top', 'Trap bar deadlift - top set (poignées basses)', [1, 1, 1, 1, 1], '4', 'top', 'dl', { adapt: true, e1: true, warm: 'trap', start: 315 }],
       ['j3-trap-bo', 'Trap bar deadlift - back-off', [2, 2, 3, 3, 1], '5', 'bo', 'dl', { adapt: true, start: 275 }],
       ['j3-highbar', 'High bar squat ou SSB squat', [3, 3, 3, 3, 2], '8', 'bo', 'sq', { start: 225, tip: 'Garde le même (SSB ou high bar) tout le bloc.' }],
+      ['j3-calf', 'Mollets assis (seated calf raise)', [3, 3, 4, 4, 2], '12-15', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }],
       ['j3-rdl', 'Romanian deadlift (RDL)', [2, 3, 3, 3, 2], '8-10', 'acc8', 'ac', { start: 135, tip: 'Plafonné à RPE 8.' }],
       ['j3-legext', 'Leg extension', [2, 3, 3, 3, 2], '15', 'acc', 'ac', { star: true, start: 120, tip: 'Descente de 2-3 s.' }],
       ['j3-legcurl', 'Leg curl couché', [2, 3, 3, 3, 2], '10-12', 'acc', 'ac', { tip: 'Hanches collées au banc, descente de 2-3 s.' }],
-      ['j3-calf', 'Mollets assis (seated calf raise)', [3, 3, 4, 4, 2], '12-15', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }],
       ['j3-latraise', 'Élévations latérales (câble, unilatéral)', [3, 3, 3, 3, 2], '15', 'acc', 'sh', { start: 35 }]
     ] },
     { id: 'j4', short: 'J4', dayName: 'Vendredi', title: 'Bench variante + haut du corps', sheet: 'JOUR 4 (vendredi) - Bench variante + haut du corps', ex: [
       ['j4-cg-top', 'Close grip bench press - top set', [1, 1, 1, 1, 1], '8', 'top', 'bp', { e1: true, warm: 'bench', tip: 'Pause sur la poitrine.' }],
       ['j4-cg-bo', 'Close grip bench press - back-off', [3, 3, 4, 4, 2], '10', 'bo', 'bp', {}],
+      ['j4-calf', 'Mollets debout (unilatéral, haltère)', [2, 3, 3, 3, 2], '10-15', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }],
       ['j4-legraise', 'Lying leg raise', [3, 3, 3, 3, 2], 'RIR 2-3', 'core', 'ac', { tip: 'Au ressenti : 2-3 reps en réserve.' }],
       ['j4-flat', 'Flat press (machine/haltères)', [3, 3, 3, 3, 2], '12', 'acc', 'ac', {}],
       ['j4-row1', '1 arm row, lats (câble/haltère)', [3, 4, 4, 4, 2], '12-15', 'acc', 'ac', {}],
@@ -577,8 +580,7 @@ window.MP_POSES = {"Vélo stationnaire ou elliptique":"data:image/png;base64,iVB
       ['j4-revpec', "Reverse pec deck (arrière d'épaule)", [3, 3, 3, 3, 2], '15', 'acc', 'sh', {}],
       ['j4-dips', 'Dips (poids du corps, excentrique lent)', [2, 3, 3, 3, 2], 'RIR 2-3', 'acc', 'ac', { tip: 'Au ressenti : 2-3 reps en réserve.' }],
       ['j4-hammer', 'Hammer curl (incliné)', [2, 3, 3, 3, 2], '12-15', 'acc', 'ac', {}],
-      ['j4-ohtri', 'Overhead triceps (câble)', [2, 3, 3, 3, 2], '10-12', 'acc', 'ac', {}],
-      ['j4-calf', 'Mollets debout (unilatéral, haltère)', [2, 3, 3, 3, 2], '10-15', 'acc', 'sh', { tip: '2 s de pause en bas (étirement), sans rebond.' }]
+      ['j4-ohtri', 'Overhead triceps (câble)', [2, 3, 3, 3, 2], '10-12', 'acc', 'ac', {}]
     ] },
     { id: 'j5', short: 'J5', dayName: 'Samedi', title: 'Points faibles (optionnel)', optional: true, noVolume: true,
       sheet: 'JOUR 5 (OPTIONNEL, samedi) - Points faibles',
@@ -1517,7 +1519,7 @@ window.MP_POSES = {"Vélo stationnaire ou elliptique":"data:image/png;base64,iVB
 (function () {
   'use strict';
   var P = window.MP_PROGRAM, E = window.MP_ENGINE, S = window.MP_STORE, C = window.MP_CONTENT, POSES = window.MP_POSES || {};
-  var APP_VERSION = "1.0 \u00b7 14 nov. 2026 \u00b7 9ee02a0a";
+  var APP_VERSION = "1.0 \u00b7 14 nov. 2026 \u00b7 e44550e1";
   var BUILD = "pwa";            // 'pwa' (appli installée) ou 'apercu' (lien claude.ai)
   var SCHEMA = 1;
   var main = document.getElementById('main');
@@ -1744,7 +1746,8 @@ window.MP_POSES = {"Vélo stationnaire ou elliptique":"data:image/png;base64,iVB
       (ex.warm ? '<button class="mini" data-act="warm">Échauffement</button>' : '') + '</header>' +
       '<p class="presc"><b>' + sets + ' × ' + h(reps) + '</b>' + (r.active || /^RIR/.test(reps) ? '' : '') + ' @ RPE ' + ex.rpe[w] + ' · ' + restTxt + '</p>';
     if (ex.t1s1 && w === 0) html += '<p class="note-s">Exercice de T1 S1, remplacé dès T1 S2 par : ' + h(P.labelAt(ex, 1)) + '.</p>';
-    if (ex.t1s1 && w === 1) html += '<p class="note-s">Nouvel exercice (avant : ' + h(P.labelAt(ex, 0)) + ') : charge à choisir cette semaine, ensuite elle se calcule toute seule.</p>';
+    // exercice ajouté dès T1 S2 (0 série en T1 S1, ex. adducteurs du 15 nov 2026) : pas de « avant : »
+    if (ex.t1s1 && w === 1) html += '<p class="note-s">' + (ex.sets[0] ? 'Nouvel exercice (avant : ' + h(P.labelAt(ex, 0)) + ') : charge à choisir cette semaine' : 'Nouvel exercice dès cette semaine : charge à choisir') + ', ensuite elle se calcule toute seule.</p>';
     if (tag) html += '<p class="failtag">S3-S4 : ' + h(tag) + '</p>';
     if (ex.tip) html += '<p class="tip">' + h(ex.tip) + '</p>';
     var coach = P.coach[w] && P.coach[w][ex.id];
